@@ -49,10 +49,8 @@ public class EnvironmentController {
 			4. 외부파일의 지정한 후 addLast()메소드를 통해
 			프로퍼티소스를 추가한다.
 			 */
-			String envPath = 
-					"classpath:EnvAdmin.properties";
-			propertySources.addLast(
-					new ResourcePropertySource(envPath));
+			String envPath = "classpath:EnvAdmin.properties";
+			propertySources.addLast(new ResourcePropertySource(envPath));
 			
 			//5. 파일의 내용을 읽어 변수에 저장함.
 			adminIdStr = env.getProperty("admin.id");
